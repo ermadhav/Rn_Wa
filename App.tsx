@@ -121,6 +121,13 @@ export default function App() {
             />
           </View>
         )}
+
+        {/* 💖 Footer Section */}
+        <View style={styles.footer}>
+          <Text style={styles.footerText}>
+            Made with ❤️ by <Text style={styles.footerName}>Cosmo Coder</Text>
+          </Text>
+        </View>
       </SafeAreaView>
     </LinearGradient>
   );
@@ -238,5 +245,21 @@ const styles = StyleSheet.create({
     color: '#e0e0e0',
     fontSize: 13,
     textAlign: 'center',
+  },
+
+  // 💖 Footer Styles
+  footer: {
+    marginTop: 'auto',
+    alignItems: 'center',
+    paddingVertical: 15,
+  },
+  footerText: {
+    color: '#ffffffcc',
+    fontSize: 15,
+    textAlign: 'center',
+  },
+  footerName: {
+    color: '#fff',
+    fontWeight: '700',
   },
 });
